@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selecting</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <h1>The Cat</h1>
+    <img
+      id="banner"
+      src="https://static.boredpanda.com/blog/wp-content/uploads/2021/05/60af991566fbb_sv61aem6ozy61__700.jpg"
+      alt=""
+    />
+
+    <p>
+      The <b id="felis-title">cat</b> (<i>Felis catus</i>) is a
+      <a href="/wiki/Domestication" title="Domestication">domestic</a>
+      <a href="/wiki/Species" title="Species">species</a> of small
+      <a href="/wiki/Carnivorous" class="mw-redirect" title="Carnivorous"
+        >carnivorous</a
+      >
+      <a href="/wiki/Mammal" title="Mammal">mammal</a>.<sup
+        id="cite_ref-Linnaeus1758_1-1"
+        class="reference"
+        ><a href="#cite_note-Linnaeus1758-1">[1]</a></sup
+      ><sup id="cite_ref-MSW3fc_2-1" class="reference"
+        ><a href="#cite_note-MSW3fc-2">[2]</a></sup
+      >
+      It is the only domesticated species in the family
+      <a href="/wiki/Felidae" title="Felidae">Felidae</a> and is often referred
+      to as the <b>domestic cat</b> to distinguish it from the wild members of
+      the family.<sup id="cite_ref-Clutton-Brock1999_4-0" class="reference"
+        ><a href="#cite_note-Clutton-Brock1999-4">[4]</a></sup
+      >
+      A cat can either be a <b>house cat</b>, a
+      <a href="/wiki/Farm_cat" title="Farm cat">farm cat</a> or a
+      <a href="/wiki/Feral_cat" title="Feral cat">feral cat</a>; the latter
+      ranges freely and avoids human contact.<sup
+        id="cite_ref-Liberg_al2014_5-0"
+        class="reference"
+        ><a href="#cite_note-Liberg_al2014-5">[5]</a></sup
+      >
+      Domestic cats are valued by humans for companionship and their ability to
+      hunt <a href="/wiki/Rodent" title="Rodent">rodents</a>. About 60
+      <a href="/wiki/Cat_breeds" class="mw-redirect" title="Cat breeds"
+        >cat breeds</a
+      >
+      are recognized by various
+      <a href="/wiki/Cat_registries" class="mw-redirect" title="Cat registries"
+        >cat registries</a
+      >.<sup id="cite_ref-Driscoll_al2009_6-0" class="reference"
+        ><a href="#cite_note-Driscoll_al2009-6">[6]</a></sup
+      >
+    </p>
+    <p>
+      The cat is similar in
+      <a href="/wiki/Cat_anatomy" title="Cat anatomy">anatomy</a> to the other
+      felid species: it has a strong flexible body, quick
+      <a href="/wiki/Reflexes" class="mw-redirect" title="Reflexes">reflexes</a
+      >, sharp teeth and
+      <a
+        href="/wiki/Retractable_claws"
+        class="mw-redirect"
+        title="Retractable claws"
+        >retractable claws</a
+      >
+      adapted to killing small prey. Its
+      <a href="/wiki/Night_vision" title="Night vision">night vision</a> and
+      sense of smell are well developed.
+      <a href="/wiki/Cat_communication" title="Cat communication"
+        >Cat communication</a
+      >
+      includes
+      <a href="/wiki/Animal_communication" title="Animal communication"
+        >vocalizations</a
+      >
+      like
+      <a href="/wiki/Meowing" class="mw-redirect" title="Meowing">meowing</a>,
+      <a href="/wiki/Purring" class="mw-redirect" title="Purring">purring</a>,
+      <a href="/wiki/Trill_consonant" title="Trill consonant">trilling</a>,
+      hissing, <a href="/wiki/Growling" title="Growling">growling</a> and
+      grunting as well as
+      <a
+        href="/wiki/Cat_body_language"
+        class="mw-redirect"
+        title="Cat body language"
+        >cat-specific body language</a
+      >. A
+      <a href="/wiki/Predator" class="mw-redirect" title="Predator">predator</a>
+      that is most active at dawn and dusk (<a
+        href="/wiki/Crepuscular"
+        class="mw-redirect"
+        title="Crepuscular"
+        >crepuscular</a
+      >), the cat is a solitary hunter but a
+      <a href="/wiki/Social_species" class="mw-redirect" title="Social species"
+        >social species</a
+      >. It can hear sounds too faint or too high in
+      <a href="/wiki/Frequency" title="Frequency">frequency</a> for human ears,
+      such as those made by
+      <a href="/wiki/Mice" class="mw-redirect" title="Mice">mice</a> and other
+      small mammals.<sup id="cite_ref-Moelk1944_7-0" class="reference"
+        ><a href="#cite_note-Moelk1944-7">[7]</a></sup
+      >
+      It secretes and perceives
+      <a href="/wiki/Pheromones" class="mw-redirect" title="Pheromones"
+        >pheromones</a
+      >.<sup id="cite_ref-Bland1979_8-0" class="reference"
+        ><a href="#cite_note-Bland1979-8">[8]</a></sup
+      >
+    </p>
+    <p>
+      Female domestic cats can have kittens from spring to late autumn, with
+      litter sizes often ranging from two to five kittens.<sup
+        id="cite_ref-Nutter2004_9-0"
+        class="reference"
+        ><a href="#cite_note-Nutter2004-9">[9]</a></sup
+      >
+      Domestic cats are bred and shown at events as registered
+      <a href="/wiki/Pedigreed_cat" class="mw-redirect" title="Pedigreed cat"
+        >pedigreed cats</a
+      >, a hobby known as
+      <a href="/wiki/Cat_fancy" class="mw-redirect" title="Cat fancy"
+        >cat fancy</a
+      >.
+      <a
+        href="/wiki/Animal_population_control"
+        class="mw-redirect"
+        title="Animal population control"
+        >Population control</a
+      >
+      of cats may be effected by
+      <a href="/wiki/Spaying" class="mw-redirect" title="Spaying">spaying</a>
+      and <a href="/wiki/Neutering" title="Neutering">neutering</a>, but their
+      proliferation and the abandonment of pets has resulted in large numbers of
+      feral cats worldwide, contributing to the extinction of entire bird,
+      mammal, and reptile species.<sup
+        id="cite_ref-Rochlitz_10-0"
+        class="reference"
+        ><a href="#cite_note-Rochlitz-10">[10]</a></sup
+      >
+    </p>
+    <p>
+      Cats were first domesticated in the
+      <a href="/wiki/Near_East" title="Near East">Near East</a> around 7500
+      BC.<sup id="cite_ref-DriscollMenotti-Raymond2007_11-0" class="reference"
+        ><a href="#cite_note-DriscollMenotti-Raymond2007-11">[11]</a></sup
+      >
+      It was long thought that cat domestication began in
+      <a href="/wiki/Ancient_Egypt" title="Ancient Egypt">ancient Egypt</a>,
+      where
+      <a href="/wiki/Cats_in_ancient_Egypt" title="Cats in ancient Egypt"
+        >cats were venerated</a
+      >
+      from around 3100 BC.<sup id="cite_ref-12" class="reference"
+        ><a href="#cite_note-12">[12]</a></sup
+      ><sup id="cite_ref-13" class="reference"
+        ><a href="#cite_note-13">[13]</a></sup
+      >
+      As of 2021,<sup
+        class="plainlinks noexcerpt noprint asof-tag update"
+        style="display: none"
+        ><a
+          class="external text"
+          href="https://en.wikipedia.org/w/index.php?title=Cat&amp;action=edit"
+          >[update]</a
+        ></sup
+      >
+      there are an estimated 220 million owned and 480 million stray cats in the
+      world.<sup id="cite_ref-14" class="reference"
+        ><a href="#cite_note-14">[14]</a></sup
+      ><sup id="cite_ref-15" class="reference"
+        ><a href="#cite_note-15">[15]</a></sup
+      >
+      As of 2017,<sup
+        class="plainlinks noexcerpt noprint asof-tag update"
+        style="display: none"
+        ><a
+          class="external text"
+          href="https://en.wikipedia.org/w/index.php?title=Cat&amp;action=edit"
+          >[update]</a
+        ></sup
+      >
+      the domestic cat was the second-most popular pet in the United States,
+      with 95 million cats owned.<sup id="cite_ref-16" class="reference"
+        ><a href="#cite_note-16">[16]</a></sup
+      ><sup id="cite_ref-17" class="reference"
+        ><a href="#cite_note-17">[17]</a></sup
+      ><sup id="cite_ref-statistacats_18-0" class="reference"
+        ><a href="#cite_note-statistacats-18">[18]</a></sup
+      >
+      In the United Kingdom, 26% of adults have a cat with an estimated
+      population of 10.9 million pet cats as of 2020.<sup
+        class="plainlinks noexcerpt noprint asof-tag update"
+        style="display: none"
+        ><a
+          class="external text"
+          href="https://en.wikipedia.org/w/index.php?title=Cat&amp;action=edit"
+          >[update]</a
+        ></sup
+      ><sup id="cite_ref-19" class="reference"
+        ><a href="#cite_note-19">[19]</a></sup
+      >
+    </p>
+
+    <div id="toc" role="navigation" aria-labelledby="mw-toc-heading">
+      <input
+        type="checkbox"
+        role="button"
+        id="toctogglecheckbox"
+        class="toctogglecheckbox"
+        style="display: none"
+      />
+      <div class="toctitle" lang="en" dir="ltr">
+        <h2 id="mw-toc-heading">Contents</h2>
+        <span class="toctogglespan"
+          ><label class="toctogglelabel" for="toctogglecheckbox"></label
+        ></span>
+      </div>
+      <ul>
+        <li class="toclevel-1 tocsection-1">
+          <a href="#">
+            <span class="tocnumber">1</span>
+            <span class="toctext">Etymology and naming</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-2">
+          <a href="#">
+            <span class="tocnumber">2</span>
+            <span class="toctext">Taxonomy</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-3">
+          <a href="#">
+            <span class="tocnumber">3</span>
+            <span class="toctext">Evolution</span>
+          </a>
+          <ul>
+            <li class="toclevel-3 tocsection-1">
+              <a href="#">
+                <span class="tocnumber">3.1</span>
+                <span class="toctext">Domestication</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="toclevel-1 tocsection-4">
+          <a href="#">
+            <span class="tocnumber">4</span>
+            <span class="toctext">Characteristics</span>
+          </a>
+          <ul>
+            <li class="toclevel-4 tocsection-1">
+              <a href="#">
+                <span class="tocnumber">4.1</span>
+                <span class="toctext">Size</span>
+              </a>
+            </li>
+            <li class="toclevel-4 tocsection-2">
+              <a href="#">
+                <span class="tocnumber">4.2</span>
+                <span class="toctext">Skeleton</span>
+              </a>
+            </li>
+            <li class="toclevel-4 tocsection-3">
+              <a href="#">
+                <span class="tocnumber">4.3</span>
+                <span class="toctext">Skull</span>
+              </a>
+            </li>
+            <li class="toclevel-4 tocsection-4">
+              <a href="#">
+                <span class="tocnumber">4.4</span>
+                <span class="toctext">Claws</span>
+              </a>
+            </li>
+            <li class="toclevel-4 tocsection-5">
+              <a href="#">
+                <span class="tocnumber">4.5</span>
+                <span class="toctext">Ambulation</span>
+              </a>
+            </li>
+            <li class="toclevel-4 tocsection-6">
+              <a href="#">
+                <span class="tocnumber">4.6</span>
+                <span class="toctext">Balance</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="toclevel-1 tocsection-5">
+          <a href="#">
+            <span class="tocnumber">5</span>
+            <span class="toctext">Senses</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-6">
+          <a href="#">
+            <span class="tocnumber">6</span>
+            <span class="toctext">Behavior</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-7">
+          <a href="#">
+            <span class="tocnumber">7</span>
+            <span class="toctext">Lifespan and health</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-8">
+          <a href="#">
+            <span class="tocnumber">8</span>
+            <span class="toctext">Ecology</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-9">
+          <a href="#">
+            <span class="tocnumber">9</span>
+            <span class="toctext">Cat show</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-10">
+          <a href="#">
+            <span class="tocnumber">10</span>
+            <span class="toctext">See also</span>
+          </a>
+        </li>
+
+        <li class="toclevel-1 tocsection-10">
+          <a href="#">
+            <span class="tocnumber">10</span>
+            <span class="toctext">References</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <h3>
+      <span class="mw-headline" id="Hunting_and_feeding"
+        >Hunting and feeding</span
+      >
+    </h3>
+    <p>
+      The shape and structure of cats' cheeks is insufficient to allow them to
+      take in liquids using suction. Therefore, when drinking they lap with the
+      tongue to draw liquid upwards into their mouths. Lapping at a rate of four
+      times a second, the cat touches the smooth tip of its tongue to the
+      surface of the water, and quickly retracts it like a corkscrew, drawing
+      water upwards.<sup id="cite_ref-Reis_2010_120-0" class="reference"
+        ><a href="#cite_note-Reis_2010-120">[120]</a></sup
+      ><sup id="cite_ref-Kim_2012_121-0" class="reference"
+        ><a href="#cite_note-Kim_2012-121">[121]</a></sup
+      >
+    </p>
+    <p>
+      Feral cats and free-fed house cats consume several small meals in a day.
+      The frequency and size of meals varies between individuals. They select
+      food based on its temperature, smell and texture; they dislike chilled
+      foods and respond most strongly to moist foods rich in amino acids, which
+      are similar to meat. Cats reject novel flavors (a response termed
+      <a href="/wiki/Neophobia" title="Neophobia">neophobia</a>) and learn
+      quickly to
+      <a href="/wiki/Taste_aversion" class="mw-redirect" title="Taste aversion"
+        >avoid foods that have tasted unpleasant</a
+      >
+      in the past.<sup id="cite_ref-Bradshaw_101-1" class="reference"
+        ><a href="#cite_note-Bradshaw-101">[101]</a></sup
+      ><sup id="cite_ref-Zaghini_122-0" class="reference"
+        ><a href="#cite_note-Zaghini-122">[122]</a></sup
+      >
+      It is also a common misconception that cats like milk/cream, as they tend
+      to avoid sweet food and milk. Most adult cats are
+      <a
+        href="/wiki/Lactose_intolerant"
+        class="mw-redirect"
+        title="Lactose intolerant"
+        >lactose intolerant</a
+      >; the sugar in milk is not easily digested and may cause soft stools or
+      <a href="/wiki/Diarrhea" title="Diarrhea">diarrhea</a>.<sup
+        id="cite_ref-Kienzle_1994_123-0"
+        class="reference"
+        ><a href="#cite_note-Kienzle_1994-123">[123]</a></sup
+      >
+      Some also develop odd eating habits and like to eat or chew on things like
+      wool, plastic, cables, paper, string, aluminum foil, or even coal. This
+      condition,
+      <a href="/wiki/Pica_(disorder)" title="Pica (disorder)">pica</a>, can
+      threaten their health, depending on the amount and toxicity of the items
+      eaten.<sup id="cite_ref-Bradshaw_1997_124-0" class="reference"
+        ><a href="#cite_note-Bradshaw_1997-124">[124]</a></sup
+      >
+    </p>
+    <p>
+      Cats hunt small prey, primarily birds and rodents,<sup
+        id="cite_ref-Woods_125-0"
+        class="reference"
+        ><a href="#cite_note-Woods-125">[125]</a></sup
+      >
+      and are often used as a form of pest control.<sup
+        id="cite_ref-126"
+        class="reference"
+        ><a href="#cite_note-126">[126]</a></sup
+      ><sup id="cite_ref-127" class="reference"
+        ><a href="#cite_note-127">[127]</a></sup
+      >
+      Cats use two hunting strategies, either stalking prey actively, or
+      <a href="/wiki/Ambush_predator" title="Ambush predator"
+        >waiting in ambush</a
+      >
+      until an animal comes close enough to be captured.<sup
+        id="cite_ref-How_Cats_Evolved_to_Win_the_Internet_128-0"
+        class="reference"
+        ><a href="#cite_note-How_Cats_Evolved_to_Win_the_Internet-128"
+          >[128]</a
+        ></sup
+      >
+      The strategy used depends on the prey species in the area, with cats
+      waiting in ambush outside burrows, but tending to actively stalk
+      birds.<sup id="cite_ref-Turner_2000_129-0" class="reference"
+        ><a href="#cite_note-Turner_2000-129">[129]</a></sup
+      ><sup class="reference nowrap"
+        >: <span title="Page / location: 153">153</span> </sup
+      >
+      Domestic cats are a major
+      <a
+        href="/wiki/Cat_predation_on_wildlife"
+        title="Cat predation on wildlife"
+        >predator of wildlife</a
+      >
+      in the United States, killing an estimated 1.3 to 4.0 billion birds and
+      6.3 to 22.3 billion mammals annually.<sup
+        id="cite_ref-NC012913_130-0"
+        class="reference"
+        ><a href="#cite_note-NC012913-130">[130]</a></sup
+      >
+    </p>
+    <p>
+      Certain species appear more susceptible than others; for example, 30% of
+      house sparrow mortality is linked to the domestic cat.<sup
+        id="cite_ref-Chucher_1987_131-0"
+        class="reference"
+        ><a href="#cite_note-Chucher_1987-131">[131]</a></sup
+      >
+      In the recovery of ringed robins (<i
+        ><a
+          href="/wiki/Erithacus_rubecula"
+          class="mw-redirect"
+          title="Erithacus rubecula"
+          >Erithacus rubecula</a
+        ></i
+      >) and dunnocks (<i
+        ><a
+          href="/wiki/Prunella_modularis"
+          class="mw-redirect"
+          title="Prunella modularis"
+          >Prunella modularis</a
+        ></i
+      >), 31% of deaths were a result of cat predation.<sup
+        id="cite_ref-Mead_1982_183–186_132-0"
+        class="reference"
+        ><a href="#cite_note-Mead_1982_183–186-132">[132]</a></sup
+      >
+      In parts of North America, the presence of larger carnivores such as
+      <a href="/wiki/Coyote" title="Coyote">coyotes</a> which prey on cats and
+      other small predators reduces the effect of predation by cats and other
+      small predators such as
+      <a href="/wiki/Opossum" title="Opossum">opossums</a> and
+      <a href="/wiki/Raccoon" title="Raccoon">raccoons</a> on bird numbers and
+      variety.<sup id="cite_ref-Crooks_1999_133-0" class="reference"
+        ><a href="#cite_note-Crooks_1999-133">[133]</a></sup
+      >
+    </p>
+    <p>
+      Perhaps the best-known element of cats' hunting behavior, which is
+      commonly misunderstood and often appalls cat owners because it looks like
+      torture, is that cats often appear to "play" with prey by releasing it
+      after capture. This
+      <a href="/wiki/Cat_and_mouse" title="Cat and mouse">cat and mouse</a>
+      behavior is due to an instinctive imperative to ensure that the prey is
+      weak enough to be killed without endangering the cat.<sup
+        id="cite_ref-134"
+        class="reference"
+        ><a href="#cite_note-134">[134]</a></sup
+      >
+    </p>
+    <p>
+      Another poorly understood element of cat hunting behavior is the
+      presentation of prey to human guardians. One explanation is that cats
+      adopt humans into their social group and share excess kill with others in
+      the group according to the
+      <a href="/wiki/Dominance_hierarchy" title="Dominance hierarchy"
+        >dominance hierarchy</a
+      >, in which humans are reacted to as if they are at, or near, the top.<sup
+        id="cite_ref-Leyhausen_1978_135-0"
+        class="reference"
+        ><a href="#cite_note-Leyhausen_1978-135">[135]</a></sup
+      >
+      Another explanation is that they attempt to teach their guardians to hunt
+      or to help their human as if feeding "an elderly cat, or an inept
+      kitten".<sup id="cite_ref-Morris_Catwatching_1_136-0" class="reference"
+        ><a href="#cite_note-Morris_Catwatching_1-136">[136]</a></sup
+      >
+      This hypothesis is inconsistent with the fact that male cats also bring
+      home prey, despite males having negligible involvement in raising
+      kittens.<sup id="cite_ref-Turner_2000_129-1" class="reference"
+        ><a href="#cite_note-Turner_2000-129">[129]</a></sup
+      ><sup class="reference nowrap"
+        >: <span title="Page / location: 153">153</span> </sup
+      >
+    </p>
+
+    <img
+      class="square"
+      src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      alt=""
+    />
+    <img
+      class="square"
+      src="https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      alt=""
+    />
+    <img
+      class="square"
+      src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      alt=""
+    />
+
+    <script src="app.js"></script>
+  </body>
+</html>
