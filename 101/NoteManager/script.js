@@ -1,8 +1,8 @@
 /**
- * 
+ *
  * Select and Manipulate on individual elements
  * ---- getElementById
- * 
+ *
  */
 
 // const list = document.getElementById('list')
@@ -15,25 +15,22 @@
 // list.innerHTML = '<h1>Hello!!</h1>'
 
 /**
- * 
+ *
  * * Select and Manipulate on individual elements
  * ---- querySelector
- * 
+ *
  */
-
-
 
 // const el = document.querySelector('ul li:nth-child(2)')
 // console.log(el)
 
-
 // console.log(el.querySelector('p .fa-times'))
 
 /**
- * 
+ *
  * * Select and Manipulate on multiple elements
  * ----- looping over getElementsByClassName
- * 
+ *
  */
 
 // const icons = document.getElementsByClassName('fa')
@@ -52,10 +49,10 @@
 // console.log(iconsArr)
 
 /**
- * 
+ *
  * Select and Manipulate on multiple elements
  * ---- querySelectorAll
- * 
+ *
  */
 
 // const lis = document.querySelectorAll('li, h2, #hide-list')
@@ -68,11 +65,11 @@
 // })
 
 /**
- * 
+ *
  * DOM Styles and Classes v1
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 // const h2 = document.querySelector('header h2');
@@ -89,13 +86,12 @@
 
 // lis[0].style.cssText = 'background-color: yellow; font-size: 25px'
 
-
 /**
- * 
+ *
  * DOM Styles and Classes v2
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 // const h2 = document.querySelector('header h2');
@@ -105,18 +101,16 @@
 // // h2.className += ' changeFt'
 // // console.log(typeof h2.className)
 
-
 // h2.classList.add('changeFt')
 // h2.classList.add('changeBg')
 // h2.classList.remove('changeFt')
 
-
 /**
- * 
+ *
  * Get and Set attributes
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 // const div = document.querySelector('div.wrapper')
@@ -137,17 +131,15 @@
 //     input.setAttribute('value', input.value)
 // })
 
-
 /**
- * 
+ *
  * DOM Navigation
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
-
-const listItem = document.getElementById('list')
+const listItem = document.getElementById("list");
 // const listItem = document.querySelector('#list-item')
 /*
 console.log(listItem.parentNode)
@@ -166,36 +158,28 @@ console.log(listItem.previousElementSibling);
 console.log(listItem.nextElementSibling);
 */
 
-
 /**
- * 
+ *
  * Creating Elements
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
-var newEl = document.createElement('button');
+var newEl = document.createElement("button");
+// console.log(newEl); //button
 
+var text = document.createTextNode("Click");
+// console.log(text); //>#text
+
+newEl.appendChild(text);
 // console.log(newEl);
 
-var text = document.createTextNode('Click')
+newEl.setAttribute("style", "display: block; background-color: coral");
 
-// console.log(text);
+var form = document.getElementById("add");
+form.appendChild(newEl); //Creating Bottom
 
-newEl.appendChild(text)
+console.dir(form); //see what is children and orders
 
-// console.log(newEl);
-
-newEl.setAttribute('style', 
-    'display: block; background-color: coral'
-    )
-
-var form = document.getElementById('add')
-
-// form.appendChild(newEl)
-
-// console.dir(form)
-
-form.insertBefore(newEl, form.children[0])
-
+form.insertBefore(newEl, form.children[0]); //moving the created bottom before the children[0]

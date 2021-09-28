@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .creature {
+        margin: 20px;
+        background-color: #ffe1ff;
+        border: 1px solid #8b7b8b;
+      }
+
+      .terrain {
+        margin: 20px;
+        background-color: green;
+        border: 1px solid #8b7b8b;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="animals" class="creature category">
+      Animals
+      <div class="creature">
+        Mammals
+        <div class="creature">Dogs</div>
+        <div class="creature" id="cat">Cats</div>
+        <div class="terrain">Forest</div>
+        <div class="terrain">Prairie</div>
+      </div>
+      <div class="creature">
+        Reptiles
+        <div class="creature">Snake</div>
+        <div class="creature">Lizard</div>
+        <div class="terrain">Jungle</div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //===================(1)Accessing to the selector==========================
+        // //CSS selector
+        // var result = $("#animals .creature"); //All div
+        // console.log(result);
+        // //
+        // //DOM traversing  (moving across particular element)
+        // result = $("animals").find(".creature");
+        // console.log(result);
+        //
+        //===================(2)Accessing to the selector==========================
+        // //CSS selector
+        // var result = $("#animals > .creature"); //Only first two div
+        // console.log(result);
+        // //DOM traversing
+        // result = $("animals").children(".creature"); //Same one
+        // console.log(result);
+        //
+        //
+        //===================(3)Accessing to the selector==========================
+        // //First(), last()
+        // var result = $("#animals")
+        //   .children()
+        //   .first()
+        //   .children(".creature")
+        //   .last(); //Cats
+        // console.log(result);
+        //
+        //===================(4)Accessing to the selector==========================
+        // //Prev()
+        // result = $("#animals")
+        //   .children()
+        //   .first()
+        //   .children()
+        //   .last()
+        //   .prev()
+        //   .prev(); //cats
+        // console.log(result);
+        // //
+        // //next()
+        // result = $("#animals")
+        //   .children()
+        //   .first()
+        //   .children(".creature")
+        //   .first()
+        //   .next(); //cats
+        // console.log(result);
+        //
+        //===================(5)Accessing to the selector==========================
+        //Parent()
+        var result = $("#cat").parent(); //Mammals
+        console.log(result);
+        //
+        //Parents()
+        result = $("#cat").parents(".category"); //Animals
+        console.log(result);
+        //
+        //Closest()
+        result = $("#cat").closest(".category"); //Animals
+        console.log(result);
+        //
+      });
+    </script>
+  </body>
+</html>

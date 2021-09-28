@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      li {
+        margin: 10px;
+      }
+      #container {
+        padding: 30px;
+        background-color: yellow;
+      }
+      .class1 {
+        background-color: cornflowerblue;
+      }
+      .class2 {
+        background-color: green;
+      }
+      .highlighted {
+        color: red;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+    </div>
+    <ul id="listing">
+      <li class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </li>
+      <li class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </li>
+      <li class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </li>
+      <li class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </li>
+      <li>
+        <ul>
+          <li>Nemo enim <a href="">some links</a> ipsam voluptatem quia</li>
+          <li>Nemo enim ipsam voluptatem quia</li>
+          <li>Nemo enim ipsam voluptatem quia</li>
+          <li>Nemo enim ipsam voluptatem quia</li>
+        </ul>
+      </li>
+
+      <li />
+      <li class="class2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </li>
+      <li class="class2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </li>
+    </ul>
+    <input type="text" placeholder="First Name" /><br />
+    <input type="text" placeholder="Last Name" /><br />
+    <input type="email" placeholder="Email" />
+    <script>
+      $(document).ready(function () {
+        //SELECTING id, class, node(html tag)
+        // $("#container").text("Henlo changed");
+        // $(".class1").text("heya changed");
+        // $("p").text("wasssuppp");
+        //
+        //SELECTING multiple selection
+        // $(".class1, .class2").addClass("highlighted");
+        //
+        //SELECTING descendent
+        // $("#listing li").addClass("highlighted");
+        // $("#listing > li").addClass("highlighted");
+        //
+        //SELECTING attributes
+        $("input[type=text]").addClass("highlighted");
+        $("input[placeholder*=mail]").addClass("highlighted");
+      });
+    </script>
+  </body>
+</html>

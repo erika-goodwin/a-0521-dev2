@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.min.css" />
+    <script src="../jqueryui/jquery-ui.min.js"></script>
+    <style>
+      #draggable {
+        width: 100px;
+        padding: 2em;
+        text-align: center;
+        background-color: yellow;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="draggable">Drag Me</div> -->
+    <div id="accordion">
+      <h3>Title</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          rerum iste aut. Reiciendis adipisci, eligendi repudiandae saepe fuga
+          corrupti cupiditate facilis animi, nulla pariatur placeat ipsa.
+          Pariatur, quisquam, ex dolorum sit excepturi dolor mollitia quis
+          molestiae, nulla deleniti impedit omnis nobis ratione facere vitae.
+          Nesciunt qui tenetur quo dicta ipsam.
+        </p>
+      </div>
+      <h3>Title</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          rerum iste aut. Reiciendis adipisci, eligendi repudiandae saepe fuga
+          corrupti cupiditate facilis animi, nulla pariatur placeat ipsa.
+          Pariatur, quisquam, ex dolorum sit excepturi dolor mollitia quis
+          molestiae, nulla deleniti impedit omnis nobis ratione facere vitae.
+          Nesciunt qui tenetur quo dicta ipsam.
+        </p>
+      </div>
+      <h3>Title</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          rerum iste aut. Reiciendis adipisci, eligendi repudiandae saepe fuga
+          corrupti cupiditate facilis animi, nulla pariatur placeat ipsa.
+          Pariatur, quisquam, ex dolorum sit excepturi dolor mollitia quis
+          molestiae, nulla deleniti impedit omnis nobis ratione facere vitae.
+          Nesciunt qui tenetur quo dicta ipsam.
+        </p>
+      </div>
+    </div>
+
+    <ul id="sortable">
+      <li>Rob</li>
+      <li>Sally</li>
+      <li>Mike</li>
+      <li>Charles</li>
+    </ul>
+
+    <script>
+      //   $("#draggable").draggable();
+      $("#accordion").accordion();
+      $("#sortable").sortable();
+    </script>
+  </body>
+</html>
