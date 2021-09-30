@@ -4,14 +4,14 @@ I believe, DOM which stands for 'Document Object Model' is something you faced i
 
 When writing web pages, one of the most common things to do is manipulate the document structure. This is usually done by using DOM.
 
-First of all, DOM is a structure to manipulate HTML (The HyperText Markup Language) or XML (Extensible Markup Language) from a program. Simply, you can say _DOM is a connection point between HTML documents and Javascript_. You can change the color of the background, change the font size, or anything you can see on the web page. And it is always a tree structure (class structure) like a family tree of Black from Harry Potter. For example, James Potter (grandfather) is `<body>` tag, Harry Potter (parent) is `<section>` tag inside of `<body>` tag, Aruba's Potter (grandchild / benchmark) is `<p>` tag inside of `<section>` tag ... and go on and go on. We call these element tags 'Node' such as parent node, children node, siblings node, etc.
+First of all, DOM is a structure to manipulate HTML (The HyperText Markup Language) or XML (Extensible Markup Language) from a program. Simply, you can say __DOM is a connection point between HTML documents and Javascript__. You can change the color of the background, change the font size, or anything you can see on the web page. And it is always a tree structure (class structure) like a family tree of Black from Harry Potter. For example, James Potter (grandfather) is `<body>` tag, Harry Potter (parent) is `<section>` tag inside of `<body>` tag, Aruba's Potter (grandchild / benchmark) is `<p>` tag inside of `<section>` tag ... and go on and go on. We call these element tags 'Node' such as parent node, children node, siblings node, etc.
 
 However, __DOM is not Javascript__. DOM and DOM method is part of something called the web APIs that stands for Application Programming Interface. (It is like libraries that browsers implement and that can access from our javaScript code.)
 
-For talking about DOM manipulation, the window object and document property are inevitable. The window object represents a window containing a DOM document. A window is a top-level object (a big papa) that has a bunch of properties. And _one of the window properties is the document property_ pointing to the DOM document loaded in the window.
+For talking about DOM manipulation, the window object and document property are inevitable. The window object represents a window containing a DOM document. A window is a top-level object (a big papa) that has a bunch of properties. And __one of the window properties is the document property__ pointing to the DOM document loaded in the window.
 The window object is available to us in any browser window and tab. It has a lot of information about a particular window tab. If you open three tabs in the same browser window, each has a different (javascript) window object. They contain information such as location (URL), size of the screen, etc.
 
-The document property is constructed after the window object. It is _a special object that is the entry point to the DOM_. It represents the contents on the page. Most of the time, it is HTML or XML. It also contains information such as location (URL), child node (structure representing HTML like `<script>` tag, `<ul>` tag, etc.) Open a console on the browser and type `console.dir(document)`, you can see a whole bunch of information that document property has.  
+The document property is constructed after the window object. It is __a special object that is the entry point to the DOM__. It represents the contents on the page. Most of the time, it is HTML or XML. It also contains information such as location (URL), child node (structure representing HTML like `<script>` tag, `<ul>` tag, etc.) Open a console on the browser and type `console.dir(document)`, you can see a whole bunch of information that document property has.  
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qu8w9oxoylcevjwtteq6.png)
 
 Finally, let's see how to access and manipulate DOM. There are many methods to access and manipulate DOM. For example
@@ -58,7 +58,7 @@ document.querySelector(".check").addEventListener("click", function () {
 1. Selecting the class 'click' by `.querySelector('.check')`
 2. Adding `.eventListner('event handler', function())`
 3. Setting event handler as click
-4. Setting `Concole.log` the value of class 'guess'
+4. Setting `Console.log` the value of class 'guess'
 
 Nowadays, JavaScript is a market leader. Some people say
 
@@ -68,4 +68,4 @@ Nowadays, JavaScript is a market leader. Some people say
 
 The main reason is that it's a light-weighted programming language that can easily be integrated with other frameworks/languages. Moreover, JavaScript has played a significant role in digital transformation by creating interactive web pages using frontend development frameworks. Another key feature is that all the top web browsers, including Google Chrome, Internet Explorer, Firefox, Edge, Safari, and Opera, all support JavaScript. There is more feature but this is why learning JavaScript will be your significant step for getting a job in the future.
 
-Have fun with your coding, or rather I should say enjoy debugging life everyone!
+Have fun with your coding, or rather I should say __enjoy debugging life everyone!__
