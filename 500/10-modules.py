@@ -12,13 +12,14 @@ from time import time
 timestamp = time() #with 'from time import time'
 print(timestamp) #1634596650.144812
 
-# [RE-WATCH VIDEO FOR INSTALLING]
+
 #PIP module 
-#pip install camelcase
-#pip freeze
-# from camelcase import CamelCase
-# c = CamelCase()
-# print(c.hump('hello there world'))
+#Install@Terminal: pip install camelcase
+#Confirm@Terminal: pip freeze
+from camelcase import CamelCase
+c = CamelCase()
+print(c.hump('hello there world'))
+
 
 #Custom module
 import validator #validator.py

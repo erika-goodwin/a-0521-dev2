@@ -2,25 +2,26 @@
 # No duplication member
 
 #Create a set
-fruits = [ 'apple', 'Orange', 'Grapes'] 
+fruits = [ 'Apples', 'Orange', 'Grapes'] 
 
 ##Check if in set
-print('Kiwi' in fruits)
+print('Kiwi' in fruits) #False
 
 #add to set
-fruits.add('Kiwi')
+# fruits.add('Kiwi') #ERROR: 'list' object has no attribute 'add'
 
 #remove from set
 fruits.remove('Apples')
+print(fruits) #['Orange', 'Grapes']
 
 #add duplicate
-fruits.add('Orange')
-print(fruits) #NO: 
+# fruits.add('Orange') #ERROR: 'list' object has no attribute 'add'
+print(fruits) 
 
 #Clear set
-fruits.clear()
-print(fruits)
+# fruits.clear()
+print(fruits) #[]
 
 #delete
 del fruits
-print(fruits)
+print(fruits) #name 'fruits' is not defined
