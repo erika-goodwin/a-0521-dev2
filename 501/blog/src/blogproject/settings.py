@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',    #added
+    'blog' #added
 ]
 
 ROOT_URLCONF = 'blog.urls' #added
